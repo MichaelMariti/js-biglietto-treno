@@ -44,7 +44,7 @@ if(età < 18) {
 
     //  - ALTRIMENTI SE età >= 65
     //      - sconto = 40 * prezzo base / 100
-} else if (età >= 65) {
+} else if (età > 65) {
     const sconto = 40 * prezzoBase / 100
     // console.log(sconto)
 
@@ -61,3 +61,5 @@ console.log(sconto)
 console.log(prezzoFinale)
 
 // 4. stampare il prezzo del biglietto con massimo 2 cifre decimali
+const message = `Il prezzo finale del biglietto è di € ${prezzoFinale}`
+console.log (message)
